@@ -1,159 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews</title>
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5476467842.js" crossorigin="anonymous"></script>
+    <title>shopping cart</title>
+    <script src="app.js" defer></script>
 
 </head>
 
-    
 <body>
-    <header>
-        <ul>
-            <li><img src="bo-bkd-logo.webp" alt="Een logo met als naam erop BKD"> </li>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="T-shirts & Hoodies.html" >T-shirts & Hoodies</a></li>
-            <li><a href="Hats.html">Hats</a></li>
-            <li><a href="Accessories.html">Accessories</a></li>
-            <li id="contact"><a href="Contact us.html">Contact us</a></li>
+    <section id="js--checkoutWindow" class="checkout a-popup">
+        <ul class="checkout_list">
+            <li class="checkout_listitem">
+                <img src="img/buzzlightyear.webp" alt="pandora sieraad van buzz lightyear" class="checkout_img">
+                <p class="checkouts_title">buzz lightyear</p>
+                <p id="js--amount-buzz" class="checkout_amount"></p>
+                <p id="js--amount-buzz-total" class="checkout_amount-total"></p>
+            </li>
+            <li class="checkout_listitem">
+                <img src="img/ironman.webp" alt="pandora sieraad van iron man" class="checkout_img">
+                <p class="checkouts_title">iron man</p>
+                <p id="js--amount-ironman" class="checkout_amount"></p>
+                <p id="js--amount-ironman-total" class="checkout_amount-total"></p>
+            </li>
+            <li class="checkout_listitem">
+                <img src="img/c3po.webp" alt="pandora sieraad van C3PO" class="checkout_img">
+                <p class="checkouts_title">C3PO</p>
+                <p id="js--amount-c3po" class="checkout_amount"></p>
+                <p id="js--amount-c3po-total" class="checkout_amount-total"></p>
+            </li>
         </ul>
-    </header>
-    <section class="section section--hero">
-        <h1>BKD Studio's</h1>
-        <p><b>Draag het avontuur,
-            word een echte BadKingDogGaming Fan.
-            Ontdek de wereld van Minecraft met onze merchandise.</b></p>
-        <button class="section--btn"  onclick="alert('No special discounts are available at this time.')"  >Sale! </button> 
-        <button onclick="window.location.href='https://www.youtube.com/@badkingdoggaming'">Youtube </button>
-        <a href='https://www.youtube.com/@badkingdoggaming'">link text</a>
-
     </section>
-    <div class="image-text">
-        <p><a href="Accessories.html"><img src="BKDmok (2).webp" style="width:200px;height:160px;"></a></p>
+    <article class="modal a-popup" id="js--shoppingModal">
+        &#10003; Added to Cart
+    </article>
+    <button id="js--checkoutbutton" class="shoppinCart">
+        <i id="js--cartIcon" class="fa-solid fa-cart-shopping"></i>
+        <i id="js--arrowIcon" class="fa-solid fa-angles-left"></i>
+        <div class="shoppinCart_message">0</div>
+    </button>
+    <main>
+        <ul class="game">
+            <li class="games_game a-popup">
+                <figure class="games_figure">
+                    <img src="img/buzzlightyear.webp" alt="pandora sieraad van buzz lightyear" class="games_img">
+                </figure>
+                <section class="games_body">
+                    <s>€59</s>
+                    <h2 class="games_h2">€49</h2>
+                    <h3 class="games_h3">Buzz Lightyear - Pixar</h3>
+                    <div class="games_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <button data-product="buzz" class="games_button">add to cart</button>
+                </section>
+            </li>
+            <li class="games_game a-popup">
+                <figure class="games_figure">
+                    <img src="img/ironman.webp" alt="pandora sieraad van iron man" class="games_img">
+                </figure>
+                <section class="games_body">
+                    <h2 class="games_h2">€39</h2>
+                    <h3 class="games_h3">Iron Man - Pixar</h3>
+                    <div class="games_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <button data-product="iron" class="games_button">add to cart</button>
+                </section>
+            </li>
+            <li class="games_game a-popup games_game--third">
+                <figure class="games_figure">
+                    <img src="img/c3po.webp" alt="pandora sieraad van C3PO" class="games_img">
+                </figure>
+                <section class="games_body">
+                    <h2 class="games_h2">€49</h2>
+                    <h3 class="games_h3">C3PO - Star Wars</h3>
+                    <div class="games_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <button data-product="c3po" class="games_button">add to cart</button>
+                </section>
+            </li>
+        </ul>
+    </main>
 
-       
-        <p>Bekijk ons nieuwe product! Vanaf nu krijg jij de mogelijkheid om te kunnen drinken uit een mok van je favorieten Youtuber. Voor maar liefs €10!</p>
-         </div>
-         <div><a href="Accessories.html">Buw Now!</a></div>
-    <div class="image-grid">
-        <p><b>Populair op het moment!</b></p>
-        <img src="redstar.png" alt="Image 1">
-        <img src="redstar.png" alt="Image 2">
-        <img src="redstar.png" alt="Image 3">
+</body>
 
-      
-    </div>
-
-
-    <section class="large-header">
-        <div class="image-container">
-            <img src="untitleedd.webp" alt="Large Header Image">
-        </div>
-        <div class="info-container">
-            <h2>BadKingDogGaming T-shirt!</h2>
-            <p>Altijd al een BadKingDogGaming T-shirt willen dragen? Dat kan nu met hoge korting! Gebruik kortings code "BKD30" voor 30 procent korting!<p>
-         
-        </div>
-
-
-
-    </section>
-    <img class="cijfers" src="stap1.png" alt="Stap 1">
-    <img class="cijfers" src="stap2.png" alt="Stap 2">
-    <img class="cijfers" src="3 (2).png" alt="Stap 3">
-    <img class="cijfers" src="1.png" alt="Stap 4">
-    
-        <section class="section section--first"></section>
-        <section class="section section--second"></section>
-        <p><b>Wekelijkse reviews</b></p>
- 
-    <section class="section section--third">
-            <button class="arrow"><</button>
-            <ul class="reviews">
-                <li class="review">
-                    <figure class="quote">
-                        <img class="steve" src="steve).png" alt="Profiel foto">
-                    </figure>
-                    <section class="stars">
-                        &#9733;
-                        &#9733;
-                        &#9733;
-                    </section>
-                    <p>Ugh, ik had hogere verwachtingen van deze mok. Het plaatje erop zag er op de website zo leuk uit, maar in werkelijkheid valt het een beetje tegen. Het lijkt erop alsof het plaatje erop is geplakt en niet helemaal goed is uitgelijnd. Het is nog steeds bruikbaar als een gewone mok, maar het gebrek aan aandacht voor detail is teleurstellend. Misschien had ik meer moeten betalen voor een betere kwaliteit.</p>
-                </li>
-    
-                <li class="review">
-                    <img class="steve" src="pf1.png" alt="Profiel foto">
-                    </figure>
-                    <section class="stars">
-                        &#9733;
-                        &#9733;
-                        &#9733;
-                        &#9733;
-                    </section>
-                    <p>Dit shirt is echt comfortabel en heeft een leuke print. Het enige minpuntje is dat het na een paar keer wassen iets is gekrompen. Let dus op bij het kiezen van de maat, maar verder ben ik er erg blij mee.</p>
-                </li>
-    
-                <li class="review">
-                    <img class="steve" src="pf2.png" alt="Profiel foto">
-                    </figure>
-                    <section class="stars">
-                        &#9733;
-                        &#9733;
-                        &#9733;
-                    </section>
-                    <p>Ik heb onlangs hier een leuke mok met een schattige hond erop gekocht, echter vind ik het wel jammer dat er maar 1 soort mok is. </p>
-                </li>
-    
-                <li class="review">
-                    <img class="steve" src="pf3.png" alt="Profiel foto">
-                    </figure>
-                    <section class="stars">
-                        &#9733;
-                        &#9733;
-                        &#9733;
-                        &#9733;
-                        &#9733;
-                    </section>
-                    <p>Ik ben echt dol op de kortingscodes die beschikbaar zijn op deze kledingwebsite! Ze maken mijn winkelervaring extra speciaal en zorgen ervoor dat ik kan genieten van geweldige deals. Het is zo opwindend om tijdens het afrekenen die kortingscode in te voeren en te zien hoeveel ik kan besparen.</p>
-                </li>
-    
-                <li class="review">
-                    <img class="steve" src="pf4.png" alt="Profiel foto">
-                    </figure>
-                    <section class="stars">
-                        &#9733;
-                        &#9733;
-                    </section>
-                    <p>Ik moet zeggen dat ik absoluut teleurgesteld ben in de klantenservice van deze kledingwebsite. Ik heb meerdere keren contact met hen opgenomen met vragen en problemen, maar het lijkt alsof niemand reageert. Ik heb e-mails gestuurd, geprobeerd te bellen en zelfs via sociale media geprobeerd contact te maken, maar het blijft stil aan hun kant.</p>
-                </li>
-    
-                <li class="review">
-                    <img class="steve" src="pf5.png" alt="Profiel foto">
-                    </figure>
-                    <section class="stars">
-                        &#9733;
-                        &#9733;
-                        &#9733;
-                        &#9733;
-                    </section>
-                    <p>Deze mok is behoorlijk schattig en perfect voor mijn ochtendkoffie. Ik hou van het ontwerp en de kleuren, ze brengen een glimlach op mijn gezicht. Het enige nadeel is dat de mok na een paar keer in de vaatwasser te hebben gestaan wat lichte vervaagde plekken begint te vertonen. </p>
-                </li>   
-            </ul>
-            <button class="arrow">></button>
-        </section>
-    
-    
-    <footer>
-        BKD Studio's © 
-
-      </footer>
-        
-    </body>
 </html>
