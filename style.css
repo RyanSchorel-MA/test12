@@ -1,0 +1,254 @@
+body{
+    background: #f1f1f1;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    text-align: center;
+}
+
+header{
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 0.188rem #000 ;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+header li{
+    display: inline;
+    padding-left: 2.813rem;
+
+}
+
+header li a{
+    color: #333;
+    text-decoration: none;
+    padding: 0.813rem ;
+    transition: .3s ease;
+}
+
+header li a:hover{
+    color: #e31a1a;
+}
+
+header ul #contact a{
+    color: #fff;
+    background: #e31a1a;
+    border-radius: 3rem;
+    float: right;
+    position: relative;
+    top: -10px;
+    
+    transition: .3s ease;
+}
+
+header ul #contact a:hover{
+    background: darkred;
+}
+
+header li img{
+    width:60px;
+    float: left;
+    margin-top:-20px ;
+}
+
+.section{
+    height: 50rem;
+}
+
+.section--hero{
+    position: relative;
+    padding: 5rem;
+    display: flex;
+    height: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(Banner.png);
+    background-size: cover;
+}
+
+.section--hero h1{
+    margin-bottom: 10rem;
+}
+
+.section--btn{
+    color: inherit;
+    cursor: pointer;
+    width: 100%;
+    padding: 18px 15px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0);
+    border: 2px solid #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+.section--btn:hover{
+    background: rgba(255, 0, 0, 0.3)
+}
+
+
+.image-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .image-text img {
+    width: 20rem;
+   
+  }
+
+  .image-grid img {
+    width: 30rem;
+    height: 30rem;
+    
+    
+  }
+  .image-grid-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 60px;
+    margin-top: 10px;
+}
+  
+  ██████╗ ██████╗ ███╗   ██╗████████╗ █████╗  ██████╗████████╗
+  ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔══██╗██╔════╝╚══██╔══╝
+  ██║     ██║   ██║██╔██╗ ██║   ██║   ███████║██║        ██║   
+  ██║     ██║   ██║██║╚██╗██║   ██║   ██╔══██║██║        ██║   
+  ╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║╚██████╗   ██║   
+   ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═╝   
+                                                             
+   
+.active{
+    color: darkred
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+    
+}
+
+.form-input {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-textarea {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.form-submit {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
+.large-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
+}
+
+.info-container {
+    flex: 1;
+}
+
+.info-container h2 {
+   
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+
+.info-container p {
+    margin-bottom: 20px;
+}
+
+.info-container a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+
+.footer1 {
+    background-color: #222831;
+    color: white;
+    height: 60px;
+  
+    width: 10px;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 25px;
+  }
+
+
+  .cijfers {
+    width: 30rem;
+    height: 30rem;
+  }
+
+
+
+  

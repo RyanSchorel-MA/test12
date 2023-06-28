@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
+
+</head>
+
+    
+<body>
+    <header>
+        <ul>
+            <li><img src="bo-bkd-logo.webp" alt="Een logo met als naam erop BKD"> </li>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="T-shirts & Hoodies.html" >T-shirts & Hoodies</a></li>
+            <li><a href="Hats.html" class="active">Hats</a></li>
+            <li><a href="Accessories.html">Accessories</a></li>
+            <li id="contact"><a href="Contact us.html">Contact us</a></li>
+        </ul>
+    </header>
+   
+    
+    <h1>Contact-formulier</h1>
+    <form action="verwerk.php" method="POST">
+        <div class="form-group">
+            <label for="firstName" class="form-label">Voornaam:</label>
+            <input type="text" id="firstName" class="form-input" name="firstName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName" class="form-label">Achternaam:</label>
+            <input type="text" id="lastName" class="form-input" name="lastName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" id="email" class="form-input" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="description" class="form-label">Beschrijving:</label>
+            <textarea id="description" class="form-textarea" name="description" rows="4" required></textarea>
+        </div>
+
+        <button type="button" class="form-submit" onclick="alert('Your message has been sent. We will respond soon!')">Verzenden</button>
+    </form>
+
+    <footer class="footer">
+        <label for="firstName" class="form-label">Overig:</label>
+        <button onclick="window.location.href='https://www.instagram.com/badkingdogstudio/'">Instagram</button>
+        <button onclick="window.location.href='https://www.youtube.com/@badkingdoggaming'">Youtube </button>
+
+        <footer>
+        BKD Studio's © 
+        
+            </footer>
+          
+        
+    </body>
+</html>
